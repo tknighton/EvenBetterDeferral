@@ -2,7 +2,7 @@
 This is a script that builds on Haircut's "Better JAMF Deferral" script found here: 
 https://github.com/haircut/better-jamf-policy-deferral 
 
-This adds support for checking running apps and skipping prompt if App to be updated isn't running. 
+Even Better Deferral adds support for checking running apps and skipping prompt if App to be updated isn't running. 
 
 It also adds support for modifying "Blocking" apps at runtime (i.e. if Keynote is running, suppress update).
 
