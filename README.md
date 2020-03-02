@@ -4,9 +4,11 @@ https://github.com/haircut/better-jamf-policy-deferral
 
 This adds support for checking running apps and skipping prompt if App to be updated isn't running. 
 
-It also adds support for modifying "Blocking" apps at runtime (i.e. if Keynote is running, suppress update). 
+It also adds support for modifying "Blocking" apps at runtime (i.e. if Keynote is running, suppress update).
 
-Future updates may include options for modifying custom messaging at runtime, and program logic for ignoring blocking apps if app to be updated won't require a prompt. 
+And finally, it provides the option to modify the messaging displayed to users at runtime on a per-policy basis, without having to tweak the script itself. 
+
+Future updates may include options for ~~modifying custom messaging at runtime,~~(done!) and program logic for ignoring blocking apps if app to be updated won't require a prompt. 
 
 # Adding the new options
 
