@@ -11,14 +11,16 @@ Future updates may include options for modifying custom messaging at runtime, an
 # Adding the new options
 
 When adding the script to your JAMF library, add the following to Parameter 7: 
-    Blocking Apps with comma and no space (e.g. Keynote,Powerpoint, etc)
+
+    Blocking Apps with comma and no space (e.g. Keynote,Powerpoint, etc)   
 
 and this to Parameter 8:
-    App(s) to be updated with comma and no space (e.g. Google Chrome, Microsoft OneNote)
+
+    App(s) to be updated with comma and no space (e.g. Google Chrome,Microsoft OneNote)   
    
 # Using the new options
 
-When creating a prompt policy with EvenBetterDeferral if there are any applications you wouldn't want to interrupt with a prompt, place these in Parameter 7, separated by a comma and NO SPACE. 
+When creating a prompt policy with EvenBetterDeferral if there are any applications you wouldn't want to interrupt with a prompt, place these in Parameter 7, separated by a comma and NO SPACE. This is mostly to avoid splashing a warning on an active presentation or similar. 
 
 Parameter 8 should contain the App(s) being updated, or any app you WOULD WANT a display prompt to appear should it be running (i.e. if you're updating WebEx plugins, you may want to notify the user to quit Outlook as well as WebEx). 
 
