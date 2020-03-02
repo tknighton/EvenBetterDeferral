@@ -128,6 +128,8 @@ def build_argparser():
                         default=BLOCKING_APPS, nargs="?")
     parser.add_argument("app_to_be_updated",
                         default=UPDATED_APP, nargs="?")
+    parser.add_argument("messaging",
+                        default=GUI_MESSAGE, nargs="?")
     return parser.parse_known_args()[0]
 
 
@@ -319,6 +321,7 @@ def write_launchdaemon(job_definition, path):
 def main():
     global UPDATED_APP
     global BLOCKING_APPS
+    global GUI_MESSAGE
     """Main program"""
     # Build the argparser
     args = build_argparser()
@@ -331,6 +334,10 @@ def main():
     if args.app_to_be_updated != "":
         # Use what was passed
         UPDATED_APP = args.app_to_be_updated.split(",")
+
+    if args.messaging != "":
+        # Use what was passed
+        GUI_MESSAGE = args.messaging
 
     # Assemble path to LaunchDaemon
     # Jamf passes ALL script parameters where they are blank or not, so we need
