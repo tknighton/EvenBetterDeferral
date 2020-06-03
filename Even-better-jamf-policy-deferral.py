@@ -57,9 +57,10 @@ JAMFHELPER = ("/Library/Application Support/JAMF/bin/jamfHelper.app/Contents"
               "/MacOS/jamfHelper")
 
 # Prompt GUI Config
-GUI_WINDOW_TITLE = "Macs @McAfee"
-GUI_HEADING = "Important update for Google Chrome"
-GUI_ICON = ("/Library/User Pictures/McAfee.png")
+GUI_WINDOW_TITLE = "IT Notification"
+GUI_HEADING = "Software Updates are ready to be installed."
+GUI_ICON = ("/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources"
+            "/AlertCautionIcon.icns")
 GUI_MESSAGE = """There are important updates for your machine. 
 
 You may schedule these updates for a convenient time by choosing below when to start installation.
